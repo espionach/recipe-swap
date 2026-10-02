@@ -1,0 +1,15 @@
+html, body { margin:0; padding:0; background:oklch(0.968 0.016 78); }
+* { box-sizing:border-box; }
+a { color:oklch(0.55 0.14 42); text-decoration:none; }
+a:hover { color:oklch(0.44 0.13 42); text-decoration:underline; }
+button { font:inherit; cursor:pointer; }
+textarea, input { font:inherit; }
+textarea::placeholder, input::placeholder { color:oklch(0.66 0.02 70); }
+
+@keyframes rs-spin { to { transform:rotate(360deg); } }
+@keyframes rs-sway { 0%,100% { transform:rotate(-13deg); } 50% { transform:rotate(13deg); } }
+@keyframes rs-rise { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+@keyframes rs-pulse { 0%,100% { opacity:0.25; } 50% { opacity:1; } }
+@keyframes rs-mix-a { 0%,49.9% { opacity:1; } 50%,100% { opacity:0; } }
+@keyframes rs-mix-b { 0%,49.9% { opacity:0; } 50%,100% { opacity:1; } }
+@keyframes rs-sweep { 0% { transform:translateX(-100%); } 100% { transform:translateX(320%); } }
